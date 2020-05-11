@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtFilePath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download Your File !" />
+
+    <EditText
+        android:id="@+id/edtCommand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:ems="10"
+        android:hint="Command"
+        android:inputType="textPersonName"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sendCommand"
+            android:layout_width="match_parent"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="Send Your Command !" />
+
+        <Button
+            android:id="@+id/getUserList"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Users !" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/userget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="User ID"
+        android:textColor="#000"
+        android:inputType="textPersonName"
+         />
+    <Button
+        android:id="@+id/setUserID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set UserID !" />
+    <Button
+        android:id="@+id/getContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Contacts! !" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cmdResult"
+                android:layout_width="match_parent"
+                android:textIsSelectable="true"
+                android:layout_height="match_parent"
+                android:text="CommandResult"
+                android:textColor="#000" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

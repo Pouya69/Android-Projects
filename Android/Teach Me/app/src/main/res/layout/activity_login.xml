@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff1"
+        android:id="@+id/uselessthingforever"
+        android:text="Account login"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/email42"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rec2"
+            android:textColorHint="#C0C0C0"
+            android:hint="Email"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/userp1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#C0C0C0"
+        android:background="@drawable/rec2"
+        android:textColor="#000"
+        android:hint="Username" />
+
+
+
+    <EditText
+        android:id="@+id/password22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rec2"
+        android:textColor="#000"
+        android:textColorHint="#C0C0C0"
+        android:hint="Password"
+        android:inputType="textPassword" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="I want to Log In as a teacher" />
+
+        <CheckBox
+            android:id="@+id/itisteacher23"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec"
+        android:text="Login!" />
+    <Button
+        android:id="@+id/gorgster2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text=" Do not have an account?Register! " />
+
+    <ProgressBar
+        android:id="@+id/progressBar12"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</LinearLayout>

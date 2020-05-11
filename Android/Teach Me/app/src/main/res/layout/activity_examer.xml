@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ChatActivity"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextquest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <Button
+        android:id="@+id/buttonsendquest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send question" />
+
+    <TextView
+        android:id="@+id/textViewShowPoints"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#0c0"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/buttonPlusPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="plus point" />
+    <Button
+        android:id="@+id/buttonMinesPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="mines point" />
+
+    <Button
+        android:id="@+id/buttonFinishExam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finish Exam" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="You joined!"
+                android:textColor="#00f" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff1"
+        android:text="Register new account" />
+
+    <EditText
+        android:id="@+id/email8"
+        android:layout_width="match_parent"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#C0C0C0"
+        android:background="@drawable/rec2"
+        android:layout_height="wrap_content"
+        android:hint="Email" />
+    <EditText
+        android:id="@+id/userrg1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#C0C0C0"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:background="@drawable/rec2"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/password8"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#C0C0C0"
+        android:textColor="#000"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:background="@drawable/rec2"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="I want to sign up as a teacher" />
+
+        <CheckBox
+            android:id="@+id/itisteacher"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rec"
+        android:text="Register!" />
+    <Button
+        android:id="@+id/golgn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=" Already have an account?Login! " />
+    <ProgressBar
+        android:id="@+id/progressBar8"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

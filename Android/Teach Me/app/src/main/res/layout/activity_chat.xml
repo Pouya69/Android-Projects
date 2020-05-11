@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/bkgrnd"
+    android:background="@drawable/bkchat"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <include
+        layout="@layout/includechat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageList"
+        android:layout_above="@+id/sendLayout"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/sendLayout">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mediaList"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/messageInput"
+                android:inputType="textMultiLine"
+                android:hint="Message..."
+                android:textColorHint="#1f1"
+                />
+
+            <Button
+                android:layout_weight="0.2"
+                android:layout_gravity="bottom"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:text="exam"
+                android:id="@+id/readyex"/>
+            <Button
+                android:layout_weight="0.1"
+                android:layout_width="0dp"
+                android:layout_gravity="bottom"
+                android:layout_height="30dp"
+                android:background="@drawable/gallery"
+                android:id="@+id/addMedia"/>
+            <Button
+                android:layout_weight="0.2"
+                android:layout_gravity="bottom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="send"
+                android:id="@+id/send"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

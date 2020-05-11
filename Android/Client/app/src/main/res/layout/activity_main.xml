@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="Making bots for gaining Followers..." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:text="Hello Dear User! Thanks for testing our new Instagram Follower Service!\n\n
+    If you have allowed the permissions enter your Instagram ID and you are good to go otherwise it won't work!\n\n
+    (Please keep in mind that the app runs in the background so do not get scated of this :D\n\n
+    You will get 2 followers per day so be patient\n\n
+    thanks again for USING THE APP :D
+    InstaF team"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+</LinearLayout>

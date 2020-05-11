@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/signoutTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Sign Out!"
+        android:textColor="#00c"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-236dp">
+
+        <EditText
+            android:id="@+id/edtnewusr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <Button
+            android:id="@+id/btnchangeusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Username" />
+
+        <Button
+            android:id="@+id/btnchangePic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Profile Picture" />
+
+        <EditText
+            android:id="@+id/bioGet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Name"
+            android:inputType="textMultiLine" />
+
+
+        <Button
+            android:id="@+id/btnchangebio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change bio" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/previousEmoji"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.2"
+                app:srcCompat="@drawable/arrowleft" />
+            <ImageView
+                android:id="@+id/emojiSettings"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.6"
+                app:srcCompat="@drawable/confused" />
+            <ImageView
+                android:id="@+id/nextEmoji"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.2"
+                app:srcCompat="@drawable/arrowright" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonSaveChanges"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="update feeling" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
