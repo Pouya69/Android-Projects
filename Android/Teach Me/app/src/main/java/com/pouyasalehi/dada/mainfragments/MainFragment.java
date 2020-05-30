@@ -220,7 +220,6 @@ public class MainFragment extends Fragment {
 
                     for(DataSnapshot userSnapshot : dataSnapshot.child("users/").getChildren()){
                         for(ChatObject mChat : chatList){
-                            Things things=new Things();
 
 
 
@@ -230,8 +229,8 @@ public class MainFragment extends Fragment {
                                 UserObject mUser = new UserObject(userSnapshot.getKey());
                                 mChat.addUserToArrayList(mUser);
 
-                                    if(usertypeholder==2){getUserData2(mUser);}
-                                else{getUserData(mUser);}
+                                    if(usertypeholder==2){getUserData(mUser);}
+                                else{getUserData2(mUser);}
                             }
                         }
                     }
@@ -251,8 +250,8 @@ public class MainFragment extends Fragment {
                                 UserObject mUser2 = new UserObject(userSnapshot.getKey());
                                 mChat.addUserToArrayList(mUser2);
 
-                                if(usertypeholder==2){getUserData2(mUser2);}
-                                else{getUserData(mUser2);}
+                                if(usertypeholder==2){getUserData(mUser2);}
+                                else{getUserData2(mUser2);}
                             }
                         }
                     }

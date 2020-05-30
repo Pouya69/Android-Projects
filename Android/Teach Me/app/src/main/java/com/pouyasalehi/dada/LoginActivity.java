@@ -85,45 +85,14 @@ public class LoginActivity extends AppCompatActivity {
             if(!usernameholder.isEmpty()){
                 if(!emailholder.isEmpty()){
                     if(usertypeholder!=0){
-                        try{DatabaseReference l=FirebaseDatabase.getInstance().getReference().child("user").child(mAuth.getUid().toString());
-                            String d=mAuth.getCurrentUser().getDisplayName();
-                            String h=mAuth.getCurrentUser().getUid();
 
-                         l.addChildEventListener(new ChildEventListener() {
-                             @Override
-                             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-                                 if(!dataSnapshot.exists()){mDatabase.deleteEmployee("1");}
-
-                             }
-
-                             @Override
-                             public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-                             }
-
-                             @Override
-                             public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-
-                             }
-
-                             @Override
-                             public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-                             }
-
-                             @Override
-                             public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                             }
-                         });
-                        }catch (Exception e){mDatabase.deleteEmployee("1");}
 
 
 
                         startActivity( new Intent(LoginActivity.this, MainActivity.class));
-                        finish();}
-                }
-          }
+                        finish();}else{mDatabase.deleteEmployee("1");}
+                }else{mDatabase.deleteEmployee("1");}
+          }else{mDatabase.deleteEmployee("1");}
            }
         else{mDatabase.deleteEmployee("1");}
         }
@@ -193,8 +162,7 @@ public class LoginActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Toast.makeText(getApplicationContext(), "Login successful!", Toast.LENGTH_LONG).show();
                             progressBar.setVisibility(View.GONE);
-                            Things k=new Things();
-                            Things p=new Things();
+
 
                             if(!FirebaseAuth.getInstance().getCurrentUser().getDisplayName().equals(name3)){
                                 Toast.makeText(getApplicationContext(), "Wrong Username", Toast.LENGTH_LONG).show();
